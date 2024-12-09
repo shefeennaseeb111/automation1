@@ -7,7 +7,7 @@ public class Base {
 	public WebDriver driver;
 	public void initialize_Browser()
 	{
-		driver=new ChromeDriver();
+		driver=new ChromeDriver();	//chrome Driver class extends a web driver interface
 		driver.get("https://selenium.qabible.in/index.php");
 		driver.manage().window().maximize();
 	}

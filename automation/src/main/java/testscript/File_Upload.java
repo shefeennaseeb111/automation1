@@ -13,6 +13,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class File_Upload {
 	public WebDriver driver;
+	public void new_tab() throws AWTException		//to create new tab in google
+	{
+		driver=new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.manage().window().maximize();
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_T);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_T);
+	}
 	public void fileupload() throws AWTException
 	{
 		driver=new ChromeDriver();
@@ -50,7 +61,8 @@ public class File_Upload {
 		// TODO Auto-generated method stub
 		File_Upload fileupld=new File_Upload();
 		//fileupld.fileupload();
-		fileupld.sendKeysexample();
+		//fileupld.sendKeysexample();
+		fileupld.new_tab();
 		
 
 	}

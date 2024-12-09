@@ -10,7 +10,7 @@ public class Initialize_Browser {
 	public static void main(String[] args) {
 		
 		//WebDriver driver=new ChromeDriver();
-		WebDriver driver=new EdgeDriver();
+		WebDriver driver=new EdgeDriver();		//EdgeDriver is also a class
 		//WebDriver driver=new FirefoxDriver();//webdriver is an interface,because interface obj=new classname();
 				
 
